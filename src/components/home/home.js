@@ -1,3 +1,4 @@
+import Social from "../socials/social";
 import "./home.css";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
                 <p class="home_intro">Knowledge of various programming languages and software development methodologies.<br/>
                     I enjoy problem-solving, testing my skills, and continually seeking ways to improve. <br/> 
                     I prioritize the quality of my work and am adaptable to collaborating in a team or working independently.</p>
+                    <Social/>
     </section>
   );
 }
