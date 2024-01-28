@@ -1,0 +1,19 @@
+.social_icon{
+	padding-left:20px;
+	font-size: xxx-large;
+	color:#C26DBC;
+}
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C26DBC;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px; 
+    margin-left: auto; 
+}
+.download-button:hover {
+    background-color: black;
+}
