@@ -4,7 +4,7 @@ import "./home.css";
 export default function Home() {
   return (
     <section class = "home section" id ="home">
-                <img src="assets\Photo2.jpg" alt="My image" class="home_img"/>
+                <img src="assets\Photo2.jpg" alt="Me" class="home_img"/>
                 <h1 class="home_title">Maria<br/> Software Developer</h1>
                 <a href="assets\Resume.pdf" download="Resume.pdf" class="download-button" target="_blank">Download Resume</a>
 
