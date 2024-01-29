@@ -5,7 +5,7 @@ export default function Skills(){
 <section className="skills" id="skills">
         <h1>Skills</h1>
         <div className="skills-container">
-            <div className="card" onclick="toggleSkills(this)">
+            <div className="card">
                 <h3>Front-end Development</h3>
                 <div className="card-details">
                     <p>HTML<br/>
@@ -15,7 +15,7 @@ export default function Skills(){
                 </div>
             </div>
 
-            <div className="card" onclick="toggleSkills(this)">
+            <div className="card">
                 <h3>Back-end Development</h3>
                 <div className="card-details">
                     <p>PHP<br/>
@@ -25,7 +25,7 @@ export default function Skills(){
                 </div>
             </div>
 
-            <div className="card" onclick="toggleSkills(this)">
+            <div className="card">
                 <h3>Mobile Application Development</h3>
                 <div className="card-details">
                     <p>Flutter<br/>
@@ -35,14 +35,14 @@ export default function Skills(){
                 </div>
             </div>
 
-            <div className="card" onclick="toggleSkills(this)">
+            <div className="card">
                 <h3>Database</h3>
                 <div className="card-details">
                     <p>SQL</p>
                 </div>
             </div>
 
-            <div className="card" onclick="toggleSkills(this)">
+            <div className="card">
                 <h3>Wireframing and Mockup Design</h3>
                 <div className="card-details">
                     <p>Figma<br/>
@@ -50,7 +50,7 @@ export default function Skills(){
                 </div>
             </div>
 
-            <div className="card" onclick="toggleSkills(this)">
+            <div className="card">
                 <h3>Version Control</h3>
                 <div className="card-details">
                     <p>Github</p>              
