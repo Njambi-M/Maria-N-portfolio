@@ -1,10 +1,11 @@
 import Social from "../socials/social";
+import myImage from '../../assets/Photo2.jpg'
 import "./home.css";
 
 export default function Home() {
   return (
     <section className = "home section" id ="home">
-                <img src="assets\Photo2.jpg" alt="Me" className="home_img"/>
+                <img src={myImage} alt="Me" className="home_img"/>
                 <h1 className="home_title">Maria<br/> Software Developer</h1>
                 <a href="assets\Resume.pdf" download="Resume.pdf" className="download-button" target="_blank" rel='noreferrer'>Download Resume</a>
 
