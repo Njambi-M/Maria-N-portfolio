@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Maria-N-portfolio/static/css/main.e5ecd168.css",
+    "main.js": "/Maria-N-portfolio/static/js/main.17c2b9a6.js",
+    "static/js/787.69d66827.chunk.js": "/Maria-N-portfolio/static/js/787.69d66827.chunk.js",
+    "static/media/Resume.pdf": "/Maria-N-portfolio/static/media/Resume.e5d53f624451c12380bc.pdf",
+    "static/media/Photo2.jpg": "/Maria-N-portfolio/static/media/Photo2.4f6f61d0b04921ead40e.jpg",
+    "static/media/nlp.png": "/Maria-N-portfolio/static/media/nlp.998b3b3ac85ea1eea6c1.png",
+    "static/media/Context diagram.png": "/Maria-N-portfolio/static/media/Context diagram.36ef354ec2a6c030ee34.png",
+    "static/media/easy_leave.jpeg": "/Maria-N-portfolio/static/media/easy_leave.5750d949309eb7dd322a.jpeg",
+    "static/media/Marz'_Place.png": "/Maria-N-portfolio/static/media/Marz'_Place.aebd4a21542c3458fc6d.png",
+    "static/media/chatbot.png": "/Maria-N-portfolio/static/media/chatbot.7ea9d56c001b239a308a.png",
+    "index.html": "/Maria-N-portfolio/index.html",
+    "main.e5ecd168.css.map": "/Maria-N-portfolio/static/css/main.e5ecd168.css.map",
+    "main.17c2b9a6.js.map": "/Maria-N-portfolio/static/js/main.17c2b9a6.js.map",
+    "787.69d66827.chunk.js.map": "/Maria-N-portfolio/static/js/787.69d66827.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5ecd168.css",
+    "static/js/main.17c2b9a6.js"
+  ]
+}
