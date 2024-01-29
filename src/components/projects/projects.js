@@ -1,15 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import blood_aid from '../../assets/blood_aid.png'
+import chatbot from '../../assets/chatbot.png'
+import contxt from '../../assets/Context diagram.png'
+import easy_leave from '../../assets/easy_leave.jpeg'
+import marz_place from "../../assets/Marz'_Place.png"
+import nlp from '../../assets/nlp.png'
+
 import "./projects.css";
 
 
 export default function Projects(){
     const galleryData = [
-        { id: 1, imageUrl: '', title: 'Mental Health Chatbot', text: 'Chatbot that aims at improving the mental well-being of individuals',link: 'https://github.com/Njambi-M/Mental-health-chatbot' },
-        { id: 2, imageUrl: '', title: 'Resturant Website', text: 'Website that allows one to order food and have the order processed', link: 'https://github.com/Njambi-M/online-resturant' },
-        { id: 3, imageUrl: '', title: 'Blood Donation Website', text: 'Website that automates the blood donation process', link: 'https://github.com/Njambi-M/Blood-Donation-System' },
-        { id: 4, imageUrl: '', title: 'System Analysis Project', text: 'System analysis project for an online thrift store' },
-        { id: 5, imageUrl: '', title: 'Leave Request Website', text: 'Website that automates the leave request process' },
-        { id: 6, imageUrl: '', title: 'NLP Classification Pipeline', text: 'NLP text classification pipelines', link: 'https://github.com/Njambi-M/NLP-model' },
+        { id: 1, imageUrl: chatbot, title: 'Mental Health Chatbot', text: 'Chatbot that aims at improving the mental well-being of individuals',link: 'https://github.com/Njambi-M/Mental-health-chatbot' },
+        { id: 2, imageUrl: marz_place, title: 'Resturant Website', text: 'Website that allows one to order food and have the order processed', link: 'https://github.com/Njambi-M/online-resturant' },
+        { id: 3, imageUrl: blood_aid, title: 'Blood Donation Website', text: 'Website that automates the blood donation process', link: 'https://github.com/Njambi-M/Blood-Donation-System' },
+        { id: 4, imageUrl: contxt, title: 'System Analysis Project', text: 'System analysis project for an online thrift store' },
+        { id: 5, imageUrl: easy_leave, title: 'Leave Request Website', text: 'Website that automates the leave request process' },
+        { id: 6, imageUrl: nlp, title: 'NLP Classification Pipeline', text: 'NLP text classification pipelines', link: 'https://github.com/Njambi-M/NLP-model' },
         
       ];
     
