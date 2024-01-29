@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../github/github_about.css";
 
 export default function GithubAbout() {
     const [userData, setUserData] = useState({});
