@@ -1,0 +1,40 @@
+.contact-info {
+	display: flex;
+	margin: 3rem 0; 
+    justify-content: space-between; 
+  }
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+.contact-details,
+.contact-form {
+    width: 48%;
+	font-family: 'Montserrat';
+}
+input, select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: 'Montserrat';
+  }
+input[type=submit] {
+	background-color: #C26DBC;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+	background-color: black;
+  }
+.contacts{
+	padding-top: 50px;
+}
+.contact{
+	margin:0 50px;
+}
