@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+This is my portfolio built using react. Find the project available at: https://njambi-m.github.io/Maria-N-portfolio/ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Questions
+### 1. What is NPM?
+NPM, which stands for Node Packet Manager, is a packet manager for Node.js JavaScript environment with features such as maintaining dependencies.
 
-## Available Scripts
+### 2. What is SPA?
+SPA, which stands for Single Page Application, is a single webpage presented in its own time and dynamically rewrites the current page, rather than loading entire new pages from the server.
 
-In the project directory, you can run:
+### 3. What is the event loop?
+The event loop is a part of JavaScript's runtime environment that enables asynchronous execution of code.
 
-### `npm start`
+### 4. What is the difference between export x and export default x? How do you import them differently?
+export x is for exporting a named export which in our case is x while export default x is used to export a default export. The default export can only be 1 in a file but there can be multiple named exports. The named export can be imported by: import {x} from './example'; while the default export is imported by: import myValue from './example'; Named exports are imported using their exact names while default exports can use different names.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 5. Why do you use className as a property in React and not class?
+This is because class is a reserved JavaScript keyword and could cause conflicts if used. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 6. Why should you not write the following? What will happen?: <button onClick={setCounter(counter + 1)}> +1 </button>
+This is discouraged as it will cause an infinite loop and possibly a crash. This is because the component will be re-rendered with a new value for the counter as soon as the previous render finishes thus causing an endless cycle of rendering and state changes since it is synchronous.
 
-### `npm test`
+### 7. What is object deconstruction and how is it connected to React components (example)?
+Object deconstruction is a feature that allows the extraction of properties or elements from objects or arrays into distinct variables during declaration. In React, it is used when declaring props to create local variables representing those prop values directly. For example: 
+import React from 'react';
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const MyComponent = (props) => {
+  // Using object destructuring to extract values from props
+  const { name, age, gender } = props;
 
-### `npm run build`
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Gender: {gender}</p>
+    </div>
+  );
+};
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// Usage of the component
+const App = () => {
+  const user = {
+    name: 'John Doe',
+    age: 25,
+    gender: 'Male',
+  };
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  return <MyComponent {...user} />;
+};
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+export default App;
 
-### `npm run eject`
+is deconstructed by:
+// Using object destructuring in function parameters
+const MyComponent = ({ name, age, gender }) => {
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Gender: {gender}</p>
+    </div>
+  );
+};
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 8. How can HTML and JavaScript be used in the same function (like in a React Component)? What makes it possible under the hood?
+This is possible due to JSX that allows embedding HTML-like templates inside JavaScript code. JSX transforms HTML-like tags and expressions into standard JavaScript objects before runtime.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 9. What is async/await? Bring an example
+It is a JavaScript feature that handles asynchronous operations. For example:
+async function sayHelloWithDelay() {
+  const sleepTimeMs = 2000;
+  await new Promise((resolve) => setTimeout(resolve, sleepTimeMs));
+  console.log("Hello!");
+}
+sayHelloWithDelay();
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In this code async/await is used in managing a timed delay where a Promise wraps a timeout of the given duration and JavaScript will pause the current function execution until the promise settles
 
-## Learn More
+### 10. What is a Promise? Bring an example
+A Promise is an object representing the eventual completion or failure of an asynchronous operation and its resulting value. We can use the previous code as an example:
+async function sayHelloWithDelay() {
+  const sleepTimeMs = 2000;
+  await new Promise((resolve) => setTimeout(resolve, sleepTimeMs));
+  console.log("Hello!");
+}
+sayHelloWithDelay();
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Promise is created, and the setTimeout function is used to introduce a delay. The resolve function is then passed as the callback to setTimeout, indicating that the promise should be resolved after the specified delay.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
