@@ -21,7 +21,9 @@ export default function Projects(){
       ];
     
     return(
-        <><h1 className="projects_title">Projects</h1>
+        <>
+        <section className = "projects section" id ="projects">
+        <h1 className="projects_title" >Projects</h1>
         <div className="container">
             <div className="row">
                 {galleryData.map((item) => (
@@ -37,7 +39,9 @@ export default function Projects(){
                     </div>
                 ))}
             </div>
-        </div></>
+        </div>
+        </section>
+        </>
 
     );
 }
