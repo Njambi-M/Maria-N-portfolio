@@ -1,5 +1,6 @@
 import "../contact/contact.css";
 import React from 'react';
+import GithubAbout from "../github/github_about";
 
 export default function Contact() {
     return(
@@ -33,6 +34,7 @@ export default function Contact() {
             </div>
         </div>
     </section>
+    <GithubAbout/>
             </>
     );
 }
