@@ -2,6 +2,8 @@ import Social from "../socials/social";
 import myImage from '../../assets/Photo2.jpg'
 import resume from '../../assets/Resume.pdf'
 import "./home.css";
+import React from "react";
+
 
 export default function Home() {
   return (

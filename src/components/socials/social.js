@@ -1,4 +1,6 @@
 import "./social.css";
+import React from "react";
+
 
 export default function Social() {
     return (

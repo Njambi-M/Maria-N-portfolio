@@ -5,6 +5,8 @@ import contxt from '../../assets/Context diagram.png'
 import easy_leave from '../../assets/easy_leave.jpeg'
 import marz_place from "../../assets/Marz'_Place.png"
 import nlp from '../../assets/nlp.png'
+import React from "react";
+
 
 import "./projects.css";
 
