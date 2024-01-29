@@ -1,3 +1,6 @@
+.contact_title{
+    font-weight: bold;
+}
 .contact-info {
 	display: flex;
 	margin: 3rem 0; 

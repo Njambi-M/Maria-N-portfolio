@@ -1,3 +1,7 @@
+.skills_title{
+    margin-top: 20px;
+    font-weight: bold;
+}
 .skills-container {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
