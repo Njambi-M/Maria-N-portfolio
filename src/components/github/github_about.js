@@ -9,9 +9,10 @@ export default function GithubAbout() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch(`https://api.github.com/users/${username}`);
-            const result = await response.json();
-            setUserData(result);
+            const userresponse = await fetch(`https://api.github.com/users/${username}`);
+            const repoResponse = await fetch(`https://api.github.com/users/${username}/repos`);
+            const userresult = await userresponse.json();
+            setUserData(userresult);
             const repoResult = await repoResponse.json();
             setRepoCount(repoResult.length);
           } catch (error) {
@@ -26,7 +27,7 @@ export default function GithubAbout() {
     <div className="git_info">
       <h2>{`GitHub User: ${userData.login}`}</h2>
       <p>{`Name: ${userData.name}`}</p>
-      <p>{`Number of Repositories: ${repoCount}`}</p>
+      <p>{`Number of Public Repositories: ${repoCount}`}</p>
     </div>
   );
 };
