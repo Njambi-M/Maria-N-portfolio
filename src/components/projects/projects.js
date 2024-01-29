@@ -21,22 +21,23 @@ export default function Projects(){
       ];
     
     return(
+        <><h1 className="projects_title">Projects</h1>
         <div className="container">
-        <div className="row">
-          {galleryData.map((item) => (
-            <div key={item.id} className="col-md-4 mb-4">
-              <div className="card">
-                <img src={item.imageUrl} className="card-img-top" alt={item.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
-                  <p className="card-text">{item.text}</p>
-                  <a href={item.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
-              </div>
+            <div className="row">
+                {galleryData.map((item) => (
+                    <div key={item.id} className="col-md-4 mb-4">
+                        <div className="card">
+                            <img src={item.imageUrl} className="card-img-top" alt={item.title} />
+                            <div className="card-body">
+                                <h5 className="card-title">{item.title}</h5>
+                                <p className="card-text">{item.text}</p>
+                                <a href={item.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
-          ))}
-        </div>
-      </div>
+        </div></>
 
     );
 }
