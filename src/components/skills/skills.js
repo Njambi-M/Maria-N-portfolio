@@ -5,7 +5,7 @@ import React from "react";
 export default function Skills(){
     return( 
 <section className="skills" id="skills">
-        <h1>Skills</h1>
+        <h1 className="skills_title">Skills</h1>
         <div className="skills-container">
             <div className="card">
                 <h3>Front-end Development</h3>
